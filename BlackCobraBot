@@ -1,0 +1,160 @@
+import java.util.*;
+import java.util.concurrent.TimeUnit;
+import java.lang.*;
+import java.awt.*;
+import javax.swing.JFrame;
+import java.awt.Container;
+import java.awt.EventQueue;
+import javax.swing.GroupLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.util.Calendar;
+public class BlackCobraBot extends Canvas
+{
+    Scanner sc = new Scanner(System.in);
+    String cmd;
+    int testingvariableint;
+    Date date = java.util.Calendar.getInstance().getTime();
+    public void Greetings()
+    {
+        System.out.println("Hi! sir how are u??");
+        System.out.println("I m Black Cobra bot");
+        System.out.println("Creator: Aaryan kumar");
+        System.out.println("!start command to start me");
+        cmd = sc.nextLine();
+    }
+
+    public void cmd() throws InterruptedException
+    {
+        for(int x = 0; x<cmd.length();x++)
+        {
+
+            if(cmd.equals("!start"))
+            {
+                while(cmd.equals("!start"))
+                {
+                    System.out.println("Great! System starts working");
+                    //TimeUtils.sleepFor(1, TimeUnit.SECONDS);
+                    TimeUnit.SECONDS.sleep(2);
+                    System.out.print("Processing.");
+                    TimeUnit.SECONDS.sleep(1);
+                    System.out.print(".");
+                    TimeUnit.SECONDS.sleep(1);
+                    System.out.print(".");
+                    TimeUnit.SECONDS.sleep(1);
+                    System.out.print(".");
+                    TimeUnit.SECONDS.sleep(1);
+                    System.out.println("..");
+                    TimeUnit.SECONDS.sleep(1);
+                    System.out.println("Installation of the program finished Type !jarvis to see the stats of Bot");
+                    cmd = sc.nextLine();
+                    if(cmd.equals("!jarvis"))
+                    {
+                        TimeUnit.SECONDS.sleep(1);
+                        System.out.print("Scanning");
+                        TimeUnit.SECONDS.sleep(1);
+                        System.out.print(".");
+                        TimeUnit.SECONDS.sleep(1);
+                        System.out.print(".");
+                        TimeUnit.SECONDS.sleep(1);
+                        System.out.println(".");
+                        System.out.println("Scanned Finished!");
+                        System.out.println("Getting your data");
+                        TimeUnit.SECONDS.sleep(1);
+                        //System.out.println("˜”*°•ǟքʊռ ʐɨռɖǟ ɦǟɨ ɮǟռƈɦօ•°*”˜");
+                        System.out.println("");
+                        System.out.println("I am Alive!");
+                        System.out.println("");
+                        System.out.println("°  JARVIS: 6.0.0");
+                        System.out.println("°  User:  彡๖ۣA@Ry@n彡");
+                        System.out.println("°  Telethon:  1.16.4");
+                        System.out.println("°  Python :  3.8.6 ");
+                        System.out.println("°  Os:  Kali GNU/Linux Rolling x86_64");
+                        System.out.println("°  Heroku:  connected ");
+                        System.out.println("°  LogChat:  connected");
+                        System.out.println("°  Sudo:  Full access");
+                        System.out.println("°  SpamProtect:  True");
+                        System.out.println("°  Uptime: "+ date);
+                        System.out.println("");
+                        System.out.println("");
+                        TimeUnit.SECONDS.sleep(2);
+                        System.out.println("sαв ѕαнι ¢нαℓ янα нαι ѕιя");
+                        //cmd = sc.nextLine();
+                    }
+                    cmd = sc.nextLine();
+                }
+            }
+            if(cmd.equals("!date and time")||cmd.equals("jarvis whats the time")||cmd.equals("time?")||cmd.equals("Jarvis whats the time")||cmd.equals("!time")||cmd.equals("!date"))
+            {
+                System.out.println("Fetching Time from your system");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(".");
+                System.out.println(date);
+            }    
+            else
+            {
+                cmd = sc.nextLine();
+            }
+            cmd = sc.nextLine();
+            if(cmd.equals("!restart"))
+            {
+                System.out.println("System is restrating!!");
+                System.out.print("Process");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(".");
+                System.out.print("Shutting down");
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println("Program Ends!!");
+                System.exit(0);
+            }
+            else
+            {
+                System.out.println("System is stopped abrubtedly!!");
+                System.out.print("Process");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(".");
+                System.out.print("Shutting down");
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.print(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(".");
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println("Program Ends!!");
+                System.exit(0);
+            }
+        }
+    }
+
+    public void paint(Graphics g) {  
+
+        Toolkit t=Toolkit.getDefaultToolkit();  
+        Image i=t.getImage("C:/Users/acer/Pictures/Camera Roll/hologram.gif");  
+        g.drawImage(i, 50,100,this);  
+
+    }  
+    
+    public static void main(String args[])throws InterruptedException
+    {
+        BlackCobraBot obj = new BlackCobraBot();
+        JFrame f=new JFrame();  
+        f.add(obj);  
+        f.setSize(600,500);  
+        f.setVisible(true);  
+        obj.Greetings();
+        obj.cmd();
+
+    }
+
+}
